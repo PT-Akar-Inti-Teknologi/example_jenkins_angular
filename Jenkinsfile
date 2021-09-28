@@ -5,7 +5,7 @@ pipeline {
     stage('Build & Test') {
       agent {
         docker {
-          image 'eristemena/docker-node-chromeheadless:12'
+          image 'eristemena/docker-node-chromeheadless:14'
           reuseNode true
         }
       }
