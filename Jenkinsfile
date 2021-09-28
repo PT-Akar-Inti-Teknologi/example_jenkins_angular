@@ -10,8 +10,8 @@ pipeline {
         }
       }
       steps {
-        sh 'yarn install'
-        sh 'yarn test:ci'
+        sh 'npm install'
+        sh 'npm run test:ci'
       }
     }
 
