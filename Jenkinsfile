@@ -10,7 +10,7 @@ pipeline {
         }
       }
       environment {
-        HOME = '.'
+        HOME = '.' // https://stackoverflow.com/a/52790764
       }
       steps {
         sh 'npm install'
