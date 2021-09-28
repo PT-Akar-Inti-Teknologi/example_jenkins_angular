@@ -5,7 +5,7 @@ pipeline {
     stage('Build & Test') {
       agent {
         docker {
-          image 'node:14.17.0-alpine'
+          image 'avatsaev/angular-chrome-headless:alpine-node-12'
           reuseNode true
         }
       }
