@@ -5,8 +5,7 @@ pipeline {
     stage('Build & Test') {
       agent {
         docker {
-          image 'avatsaev/angular-chrome-headless:alpine-node-12'
-          args '-u root:sudo'
+          image 'eristemena/docker-node-chromeheadless:12'
           reuseNode true
         }
       }
