@@ -6,6 +6,7 @@ pipeline {
       agent {
         docker {
           image 'avatsaev/angular-chrome-headless:alpine-node-12'
+          args '-u root:sudo'
           reuseNode true
         }
       }
